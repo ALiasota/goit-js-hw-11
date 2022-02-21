@@ -20,13 +20,13 @@ export default class ImagesIpiServise {
         });
 
         const url = `${BASE_URL}?${searchParams}`;
-        console.log(url)
+        // console.log(url)
 
         try {
-            const images = await axios.get(url);
-            return images;
+            const response = await axios.get(url);            
+            return response.data;
         } catch (error) {
-            console.log(error);
+             console.log(error);
         }
     }
 
