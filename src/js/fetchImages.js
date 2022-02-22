@@ -32,6 +32,7 @@ export default class ImagesIpiServise {
 
     incrementPage() {
         this.page += 1;
+        
     }
 
     resetPage() {

@@ -11,6 +11,7 @@ body {
   color: #212121;
   line-height: 1.5;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .search-form {
@@ -46,9 +47,46 @@ body {
 .gallary {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 
-/* .photo-card {
-  width: 100px;
-  height: 100%;
-} */
+.photo-card {  
+  position: relative;
+  border: 2px solid #eee;
+  
+  margin-bottom: 10px;
+  width: calc((100%/4) - 30px);
+  vertical-align: bottom;
+  padding-bottom: 45px;
+}
+
+.photo-card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.image-cont {
+  display: block;
+}
+
+.info {
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
+}
+
+.info-item {
+  display: block;
+  /* height: 30px; */
+  margin-right: 5px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: auto;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
