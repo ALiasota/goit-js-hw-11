@@ -50,14 +50,17 @@ body {
   margin-top: 5px;
 }
 
-.photo-card {  
+.photo-card {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   border: 2px solid #eee;
-  
   margin-bottom: 10px;
-  width: calc((100%/4) - 30px);
+  width: calc((100% / 4) - 30px);
   vertical-align: bottom;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 .photo-card:not(:last-child) {
@@ -69,7 +72,6 @@ body {
 }
 
 .info {
-  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
   vertical-align: bottom;
@@ -79,7 +81,6 @@ body {
 
 .info-item {
   display: block;
-  /* height: 30px; */
   margin-right: 5px;
   margin-right: 5px;
   margin-bottom: 0;
@@ -90,3 +91,7 @@ body {
   vertical-align: bottom;
 }
 
+.image-cont img {
+  display: block;
+  max-width: 100%;
+}
