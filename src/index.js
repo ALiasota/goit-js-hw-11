@@ -19,9 +19,10 @@ refs.searchForm.addEventListener('submit', onSearch);
 
 function onSearch(e) {
     e.preventDefault();
-    imagesIpiServise.query = e.currentTarget.elements.searchQuery.value;
+    imagesIpiServise.query = e.currentTarget.elements.searchQuery.value.trim();
     if (imagesIpiServise.query === '') {
         Notiflix.Notify.warning('Sorry, there are no images matching your search query. Please try again.');
+        e.currentTarget.elements.searchQuery.value = '';
         return;
     }
 
